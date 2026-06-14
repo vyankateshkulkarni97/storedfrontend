@@ -30,6 +30,47 @@ const CommonApi = {
   getTopProducts: () =>
     backendAPI.get("/dashboard/top-products/"),
 
+  // Delivery APIs
+  getDeliveryProfile: () =>
+    backendAPI.get("/delivery/profile/"),
+
+  getDeliveryDashboardSummary: () =>
+    backendAPI.get("/delivery/dashboard-summary/"),
+
+  getDeliveryOrders: () =>
+    backendAPI.get("/delivery/orders/"),
+
+  markDelivered: (id) =>
+    backendAPI.put(`/delivery/order/${id}/delivered/`),
+
+  markOutForDelivery: (id) =>
+    backendAPI.put(`/delivery/order/${id}/out-for-delivery/`),
+
+  // Retailer APIs
+  getRetailerProfile: () =>
+    backendAPI.get("/retailer/profile/"),
+
+  getRetailerDashboard: () =>
+    backendAPI.get("/retailer/dashboard/"),
+
+  getRetailerProducts: () =>
+    backendAPI.get("/retailer/products/"),
+
+  addRetailerProduct: (data) =>
+    backendAPI.post("/retailer/products/add/", data),
+
+  updateRetailerProduct: (id, data) =>
+    backendAPI.put(`/retailer/products/${id}/`, data),
+
+  deleteRetailerProduct: (id) =>
+    backendAPI.delete(`/retailer/products/${id}/delete/`),
+
+  getRetailerOrders: () =>
+    backendAPI.get("/retailer/orders/"),
+
+  getRetailerRevenue: () =>
+    backendAPI.get("/retailer/revenue/"),
+
 };
 
 export default CommonApi;
