@@ -1,0 +1,87 @@
+.details-container {
+    padding: 40px;
+    background: #f8f9fb;
+    min-height: 100vh;
+  }
+  
+  .details-card {
+    display: flex;
+    gap: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
+  
+  .details-img {
+    width: 320px;
+    height: 320px;
+    object-fit: contain;
+  }
+  
+  .details-info h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  
+  .category {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    color: #0c831f;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    color: #f59e0b;
+    margin-bottom: 15px;
+  }
+  
+  .desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .buy-btn {
+    padding: 10px 20px;
+    background: #0c831f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .buy-btn:hover {
+    background: #096b18;
+  }
+  .back-btn {
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    border: none;
+    background: #e5e7eb;
+    color: #1c1c1c;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .back-btn:hover {
+    background: #d1d5db;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .details-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .details-img {
+      width: 100%;
+    }
+  }

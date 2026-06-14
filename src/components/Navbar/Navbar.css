@@ -1,0 +1,249 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  height: 70px;
+  padding: 0 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: white;
+  padding: 3px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-container {
+  position: relative;
+}
+
+.profile-icon {
+  color: white;
+  font-size: 38px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.profile-icon:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card {
+  position: absolute;
+  top: 55px;
+  right: 0;
+
+  width: 300px;
+
+  background: white;
+  border-radius: 15px;
+
+  padding: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  animation: fadeIn 0.3s ease;
+}
+
+/* Arrow */
+
+.profile-card::before {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  right: 18px;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+/* =========================
+   USER DETAILS
+========================= */
+
+.profile-header {
+  text-align: center;
+}
+
+.profile-avatar {
+  font-size: 70px;
+  color: #2a5298;
+}
+
+.profile-card h3 {
+  text-align: center;
+  margin-top: 10px;
+
+  color: #1e3c72;
+  font-size: 22px;
+}
+
+.profile-card p {
+  text-align: center;
+  color: #666;
+  margin: 8px 0;
+  word-break: break-word;
+}
+
+.profile-card hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.profile-btn {
+  width: 100%;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 12px;
+  margin-top: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* Settings */
+
+.settings-btn {
+  background: #f4f7ff;
+  color: #2a5298;
+}
+
+.settings-btn:hover {
+  background: #dce8ff;
+}
+
+/* Logout */
+
+.logout-btn {
+  background: #ff4d4f;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #e63946;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .nav-logo span {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .profile-card {
+    width: 260px;
+    right: -10px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}

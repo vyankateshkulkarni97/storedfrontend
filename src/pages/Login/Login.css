@@ -1,0 +1,118 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Full screen background */
+  .login-container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Card */
+  .login-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  /* Title */
+  .login-card h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Inputs */
+  .login-input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .login-input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+  }
+  
+  /* Button */
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #4facfe;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-btn:hover {
+    background: #3a8de0;
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .login-card {
+      padding: 25px 20px;
+    }
+  
+    .login-card h2 {
+      font-size: 20px;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .login-card {
+      max-width: 350px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1200px) {
+    .login-card {
+      max-width: 420px;
+    }
+  }
+
+
+  /* Register text */
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Register link */
+  .register-link {
+    margin-left: 5px;
+    color: #0c831f;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline;
+    color: #096b19;
+  }
